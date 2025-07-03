@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Table Display</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <form id="userForm">
+        <label for="name">
+          Name
+          <input class="inputStyle" type="text" id="name" required />
+        </label>
+
+        <label for="age">
+          Age
+          <input
+            class="inputStyle"
+            type="number"
+            id="age"
+            required
+            min="1"
+            max="200"
+          />
+        </label>
+        <button id="submitBtn" type="submit">Add</button>
+      </form>
+
+      <div class="showTable">
+        <div class="innerContainer">
+          <table id="tableContainer">
+            <thead>
+              <th id="nameHeader">names</th>
+              <th id="ageHeader">age</th>
+              <th>modify</th>
+            </thead>
+
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
